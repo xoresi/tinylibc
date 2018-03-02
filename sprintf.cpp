@@ -15,7 +15,7 @@
 // Force the linker to include USER32.LIB
 #pragma comment(linker, "/defaultlib:user32.lib")
 
-EXTERN_C int sprintf(char *buffer, const char *format, ...)
+EXTERN_C int crt_sprintf(char *buffer, const char *format, ...)
 {
     int retValue;
     va_list argptr;
@@ -27,7 +27,7 @@ EXTERN_C int sprintf(char *buffer, const char *format, ...)
     return retValue;
 }
 
-EXTERN_C int _snprintf(char *dest, size_t n, const char *fmt, ...)
+EXTERN_C int crt__snprintf(char *dest, size_t n, const char *fmt, ...)
 {
 	n;
 
@@ -38,7 +38,7 @@ EXTERN_C int _snprintf(char *dest, size_t n, const char *fmt, ...)
 	return retValue;
 }
 
-EXTERN_C int vsnprintf(char *dest, size_t n, const char *fmt, va_list args)
+EXTERN_C int crt_vsnprintf(char *dest, size_t n, const char *fmt, va_list args)
 {
 	n;
 	return vsprintf(dest, fmt, args);

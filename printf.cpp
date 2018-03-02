@@ -16,7 +16,7 @@
 
 BEGIN_EXTERN_C
 
-int printf(const char *format, ...)
+int crt_printf(const char *format, ...)
 {
     va_list args;
     va_start(args, format);
@@ -26,7 +26,7 @@ int printf(const char *format, ...)
 	return ret;
 }
 
-int wprintf(const wchar_t *format, ...)
+int crt_wprintf(const wchar_t *format, ...)
 {
 	va_list args;
 	va_start(args, format);
@@ -36,9 +36,7 @@ int wprintf(const wchar_t *format, ...)
 	return ret;
 }
 
-
-
-int vprintf(const char *format, va_list args)
+int crt_vprintf(const char *format, va_list args)
 {
 	char szBuff[1024];
 
@@ -49,7 +47,7 @@ int vprintf(const char *format, va_list args)
 	return retValue;
 }
 
-int vwprintf(const wchar_t *format, va_list args)
+int crt_vwprintf(const wchar_t *format, va_list args)
 {
 	wchar_t buf[1024];
 	int ret = wvsprintfW(buf, format, args);

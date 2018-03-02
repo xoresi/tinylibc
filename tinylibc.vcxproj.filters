@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="puts.cpp" />
+    <ClCompile Include="qsort.cpp" />
+    <ClCompile Include="sprintf.cpp" />
+    <ClCompile Include="string.cpp" />
+    <ClCompile Include="struplwr.cpp" />
+    <ClCompile Include="wstring.cpp" />
+    <ClCompile Include="alloc.cpp" />
+    <ClCompile Include="argcargv.cpp" />
+    <ClCompile Include="atol.cpp" />
+    <ClCompile Include="crt0tcon.cpp" />
+    <ClCompile Include="crt0tdll.cpp" />
+    <ClCompile Include="crt0twin.cpp" />
+    <ClCompile Include="initterm.cpp" />
+    <ClCompile Include="isctype.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="memory.cpp" />
+    <ClCompile Include="newdel.cpp" />
+    <ClCompile Include="printf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tlibc.vcproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libct.h" />
+  </ItemGroup>
+</Project>
